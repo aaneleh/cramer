@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Calculo de 3 incógnitas</title>
+</head>
+<body>
+    <div class="content">
+        <div>
+            <header>
+                <a class="arrow" href="../index.php">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z"/></svg>
+                </a>
+                <h1>Cálculo de 3 incógnitas</h1>
+            </header>
+            <p>&nbsp&nbspInsira nos espaços abaixo sua equação. Cuidado para colocar um incognita em cada espaço e o resultado após o sinal de igual. Se não for colocado nenhum sinal, é considerado positivo.</p>
+        </div>
+        <form action="resultado3x3.php" method="POST">
+            <div class="linha_form">
+                <input name="x1" type="number" step="0.1" required>x +
+                <input name="y1" type="number" step="0.1" required>y +
+                <input name="z1" type="number" step="0.1" required>z =
+        
+                <input name="result1" type="number" step="0.1" required>
+            </div>
+            <div class="linha_form">
+                <input name="x2" type="number" step="0.1" required>x + 
+                <input name="y2" type="number" step="0.1" required>y + 
+                <input name="z2" type="number" step="0.1" required>z =
+                
+                <input name="result2" type="number" step="0.1" required>
+            </div>
+            <div class="linha_form">
+                <input name="x3" type="number" step="0.1" required>x + 
+                <input name="y3" type="number" step="0.1" required>y +
+                <input name="z3" type="number" step="0.1" required>z =
+                
+                <input name="result3" type="number" step="0.1" required>
+            </div>
+            <div class="linha_form">
+                <input class="button" type="submit" value="Calcular">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

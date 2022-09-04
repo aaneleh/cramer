@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(221, 221, 221);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    background-color: #fff;
+    width: min(100%, 60em);
+    height: min(100%, 35em);
+
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0 0.10em 0.25em 0.10em rgb(159, 159, 159);
+
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+}
+header {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    padding-left: 1em;
+}
+.linha_form {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+    justify-content: center;
+}
+.arrow {
+    transform: scale(1.0);
+    transition: transform 0.2s;
+}
+.arrow:hover {
+    transform: scale(1.15);
+}
+input[type="submit"]{
+    font-size: 1.10em;
+    font-family: 'Poppins', sans-serif;
+}
+.button {
+    background: rgb(148,227,233);
+    background: radial-gradient(circle, rgba(148,227,233,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    color: #000;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+.button:hover {
+    background: rgb(148,227,233);
+
+    animation-name: gradientmove;
+    animation-duration: 100ms;
+    animation-timing-function: linear;
+}
+@keyframes gradientmove {
+    0% {
+        background: radial-gradient(circle, rgba(148,227,233,1) 0%, rgba(148,187,233,1) 50%);
+    }
+    25% {
+        background: radial-gradient(circle, rgba(148,227,233,1) 25%, rgba(148,187,233,1) 75%);
+    }
+    50% {
+        background: radial-gradient(circle, rgba(148,227,233,1) 50%, rgba(148,187,233,1) 100%);
+    }
+    75% {
+        background: radial-gradient(circle, rgba(148,227,233,1) 75%, rgba(148,187,233,1) 100%);
+    }
+    100% {
+        background: radial-gradient(circle, rgba(148,227,233,1) 100%, rgba(148,187,233,1) 100%);
+    }
+}
